@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportyNesia</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- --------favicon-------- -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdn bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- kode anti copas -->
+    <script type="text/javascript">
+      if (typeof document.onselectstart != "undefined") {
+        document.onselectstart = new Function("return false");
+      } else {
+        document.onmousedown = new Function("return false");
+        document.onmouseup = new Function("return true");
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="con-nav">
+          <div class="nav1">
+            <div class="con-nav1">
+              <div class="nav1-main1">
+                <ul>
+                  <li><a href="">BERANDA</a></li>
+                  <li><a href="">NEWS</a></li>
+                  <li><a href="">PRIVACY POLICY</a></li>
+                  <li><a href="">ABOUT</a></li>
+                </ul>
+              </div>
+              <div class="andro1">
+                <p onclick="navdropdownandro1(event)">
+                  <i class="bi bi-menu-button-wide"></i> MENU
+                </p>
+                <ul class="ul-dropnav-andro">
+                  <li><a href="#">BERANDA</a></li>
+                  <li><a href="#">DISCLAIMER</a></li>
+                  <li><a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                </ul>
+              </div>
+              <div class="nav1-main2">
+                <div class="con-i-nav1">
+                  <a href=""> <i class="bi bi-xbox"></i></a>
+                </div>
+                <div class="con-i-nav1">
+                  <a href=""><i class="bi bi-github"></i></a>
+                </div>
+                <div class="con-i-nav1">
+                  <a href=""><i class="bi bi-telegram"></i></a>
+                </div>
+                <div class="con-i-nav1">
+                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                </div>
+                <div class="con-i-nav1">
+                  <a href=""><i class="bi bi-tiktok"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav2">
+            <div class="con-nav2">
+              <div class="con-img-nav2">
+                <a href=""><img src="img/logo.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="nav3">
+            <div class="con-nav3">
+              <div class="nav3-main1">
+                <p class="p1-menu-andro" id="andro12">
+                  <i class="bi bi-list"></i>
+                </p>
+                <p class="p1-nav3" id="andro1"><a href="">BERANDA</a></p>
+                <p class="p2-nav3" id="andro2">
+                  <a href="">NEWS</a>
+                </p>
+                <div class="dropdown-nav1">
+                  <p class="p3-nav3" id="andro3" onclick="navdropdown1(event)">
+                    SPORT<i class="bi bi-arrow-down"></i>
+                  </p>
+                  <ul class="ul-dropnav1">
+                    <li><a href="#">Sepak Bola</a></li>
+                    <li><a href="#">Basket</a></li>
+                    <li><a href="#">Volly</a></li>
+                    <li><a href="#">Bulu Tangkis</a></li>
+                    <li><a href="#">Oto: -Motor, -Mobil</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-nav2">
+                  <p class="p4-nav3" id="andro4" onclick="navdropdown2(event)">
+                    WISATA<i class="bi bi-arrow-down"></i>
+                  </p>
+                  <ul class="ul-dropnav2">
+                    <li><a href="#">Pantai</a></li>
+                    <li><a href="#">Gunung</a></li>
+                    <li><a href="#">Rekreasi</a></li>
+                    <li><a href="#">Wahana</a></li>
+                    <li><a href="#">Destinasi</a></li>
+                  </ul>
+                </div>
+                <p class="p5-nav3" id="andro5">
+                  <a href="">KULINER</a>
+                </p>
+                <p class="p6-nav3" id="andro6">
+                  <a href="">KUIS</a>
+                </p>
+              </div>
+              <div class="nav3-main2">
+                <input type="search" name="" id="" placeholder="SEARCH..." />
+                <div class="con-nav3-i">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header">
+        <div class="con-header" id="div-banner">
+          <div class="header1">
+            <div class="con-header1">
+              <div class="con-main1-header1">
+                <a class="anya1" href=""
+                  >10 Tips Sukses Bisnis Online Tanpa Modal</a
+                >
+                <p>
+                  Suspendisse potenti. Praesent adipiscing. Donec orci lectus,
+                  aliquam ut, faucib…<a class="anya2" href="">Baca terus..</a>
+                </p>
+                <div class="absolute-header1">FEATURED POST</div>
+              </div>
+            </div>
+          </div>
+          <div class="header2">
+            <div class="con-header2">
+              <p class="p1-header2">MENGENAI SAYA</p>
+              <a class="item2-header2" href=""
+                ><img src="img/alu.jpg" alt=""
+              /></a>
+              <a class="item3-header2" href=""><p>ALUCARD GANTENG</p></a>
+              <p class="item4-header2">
+                <i class="bi bi-geo-alt-fill"></i> Indonesia
+              </p>
+              <p class="item5-header2">Spesialis pembuat Template</p>
+              <p class="item6-header2">
+                Blogger sejak tahun 2011. <a href="">Alucard.id</a>
+              </p>
+              <a class="item7-header2" href="">LIHAT PROFIL LENGKAPKU</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="con-main">
+          <div class="main1">
+            <div class="con-main1">
+              <div class="judul-main1">
+                <p class="judul-p-main1">POSTINGAN TERBARU</p>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo1.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo2.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      Kisah Rahasia Selebriti Terkenal Terungkap: Skandal di Balik Sorotan Kamera
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo3.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      Rumah Tangga Selebriti di Ujung Kehancuran: Skandal, Perselingkuhan, dan Perceraian yang Mengejutkan
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo4.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      Kisah Cinta Terlarang: Selebriti Terjebak dalam Affair yang Mengejutkan
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo5.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      Terungkap! Selebriti Top Terjebak dalam Skandal Cinta
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <div class="isi-main1">
+                <div class="isi-img">
+                  <a href=""><img src="img/fo6.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks">
+                  <a href="">
+                    <h1>
+                      Skandal Finansial Menghantui Karier Selebriti Ini
+                    </h1>
+                  </a>
+                  <p class="p1-main1">
+                    Diposkan Mas Sugeng - Maret 13, 2021 -
+                    <a href="">Bisnis</a> - <a href="">51 komentar</a>
+                  </p>
+                  <p class="p2-main1">
+                    Curabitur turpis. Maecenas malesuada. Etiam sit amet orci
+                    eget eros faucibus ti... <a href="">Baca terus..</a>
+                  </p>
+                </div>
+              </div>
+              <p class="p3-main1">
+                <span>1</span><a class="main1-aha" href="">2</a
+                ><a class="main1-aha" href="">3</a
+                ><a class="main1-ahay" href="">NEXT</a
+                ><a class="main1-ahay" href="">LAST</a>
+              </p>
+            </div>
+          </div>
+          <div class="main2">
+            <div class="con-main2">
+              <p class="p1-main2">POPULER</p>
+              <div class="isi-main2">
+                <div class="isi-img2">
+                  <a href=""><img src="img/fo7.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks2">
+                  <a href="">
+                    <h1>
+                      Selebriti Muda Kontroversial: Terlalu Cepat Terkenal
+                    </h1>
+                  </a>
+                  <p>Maret 13, 2021 51 komentar</p>
+                </div>
+                <div class="con-no-main2">
+                  <p class="no-main2">1</p>
+                </div>
+              </div>
+              <div class="isi-main2-white">
+                <div class="isi-img2">
+                  <a href=""><img src="img/fo8.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks2">
+                  <a href="">
+                    <h1>
+                      Skandal Finansial Menghantui Karier Selebriti Ini
+                    </h1>
+                  </a>
+                  <p>Maret 13, 2021 51 komentar</p>
+                </div>
+                <div class="con-no-main2">
+                  <p class="no-main2">2</p>
+                </div>
+              </div>
+              <div class="isi-main2">
+                <div class="isi-img2">
+                  <a href=""><img src="img/fo9.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks2">
+                  <a href="">
+                    <h1>
+                      Gosip Pernikahan: Selebriti Terkenal Akan Menikah di Destinasi Eksotis
+                    </h1>
+                  </a>
+                  <p>Maret 13, 2021 51 komentar</p>
+                </div>
+                <div class="con-no-main2">
+                  <p class="no-main2">3</p>
+                </div>
+              </div>
+              <div class="isi-main2-white">
+                <div class="isi-img2">
+                  <a href=""><img src="img/fo10.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks2">
+                  <a href="">
+                    <h1>
+                      Terlalu Jauh: Selebriti Ini Menghadapi Serangkaian Tindakan Hukum
+                    </h1>
+                  </a>
+                  <p>Maret 13, 2021 51 komentar</p>
+                </div>
+                <div class="con-no-main2">
+                  <p class="no-main2">4</p>
+                </div>
+              </div>
+              <div class="isi-main2">
+                <div class="isi-img2">
+                  <a href=""><img src="img/fo11.jpg" alt="" /></a>
+                </div>
+                <div class="isi-teks2">
+                  <a href="">
+                    <h1>
+                      Pengkhianatan dan Intrik dalam Produksi Film Terkenal
+                    </h1>
+                  </a>
+                  <p>Maret 13, 2021 51 komentar</p>
+                </div>
+                <div class="con-no-main2">
+                  <p class="no-main2">5</p>
+                </div>
+              </div>
+              <p class="p2-main2">ARSIP</p>
+              <div class="con-p3-bulan">
+                <a href="">Maret (10)</a>
+                <a href="">Februari (10)</a>
+                <a href="">Januari (10)</a>
+                <a href="">Desember (10)</a>
+                <a href="">Mei (10)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <article>
+      <div class="article">
+        <div class="con-article">
+          <div class="article1">
+            <div class="con-article1">
+              <div class="con2-article1">
+                <div class="article11">
+                  <div class="judul-article11">
+                    <a href="" class="judul-p-article11">HOBI</a>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo12.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo13.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo14.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="article12">
+                  <div class="judul-article11">
+                    <a href="" class="judul-p-article11">GAMES</a>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo15.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo16.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                  <div class="isi-article">
+                    <div class="isi-article-img">
+                      <a href=""><img src="img/fo1.jpg" alt="" /></a>
+                    </div>
+                    <div class="isi-article-text">
+                      <a href=""
+                        ><h1>
+                          Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                          Langka?
+                        </h1></a
+                      >
+                      <p>13/03/202151 Komentar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="con2-article1">
+              <div class="article11">
+                <div class="judul-article11">
+                  <a href="" class="judul-p-article11">BISNIS</a>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo2.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo3.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo4.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="article12">
+                <div class="judul-article11">
+                  <a href="" class="judul-p-article11">HEALTH</a>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo5.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo6.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo7.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="con2-article1">
+              <div class="article11">
+                <div class="judul-article11">
+                  <a href="" class="judul-p-article11">FOOD</a>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo8.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo9.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo10.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="article12">
+                <div class="judul-article11">
+                  <a href="" class="judul-p-article11">GADGET</a>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo11.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo12.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+                <div class="isi-article">
+                  <div class="isi-article-img">
+                    <a href=""><img src="img/fo13.jpg" alt="" /></a>
+                  </div>
+                  <div class="isi-article-text">
+                    <a href=""
+                      ><h1>
+                        Bos Sony Bicara Soal Pasokan PS5, Aman atau Tetap
+                        Langka?
+                      </h1></a
+                    >
+                    <p>13/03/202151 Komentar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article2"></div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="header2-andro">
+        <div class="con-header2-andro">
+          <p class="p1-header2-andro">MENGENAI SAYA</p>
+          <a class="item2-header2-andro" href=""><img src="img/alu.jpg" alt="" /></a>
+          <a class="item3-header2-andro" href=""><p>ALUCARD GANTENG</p></a>
+          <p class="item4-header2-andro">
+            <i class="bi bi-geo-alt-fill"></i> Indonesia
+          </p>
+          <p class="item5-header2-andro">Spesialis pembuat Template</p>
+          <p class="item6-header2-andro">
+            Blogger sejak tahun 2011. <a href="">Alucard.id</a>
+          </p>
+          <a class="item7-header2-andro" href="">LIHAT PROFIL LENGKAPKU</a>
+        </div>
+      </div>
+      <div class="main2-andro">
+        <div class="con-main2-andro">
+          <p class="p1-main2-andro">POPULER</p>
+          <div class="isi-main2-andro">
+            <div class="isi-img2-andro">
+              <a href=""><img src="img/fo1.jpg" alt="" /></a>
+            </div>
+            <div class="isi-teks2-andro">
+              <a href="">
+                <h1>
+                  8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                </h1>
+              </a>
+              <p>Maret 13, 2021 51 komentar</p>
+            </div>
+            <div class="con-no-main2-andro">
+              <p class="no-main2-andro">1</p>
+            </div>
+          </div>
+          <div class="isi-main2-white-andro">
+            <div class="isi-img2-andro">
+              <a href=""><img src="img/fo2.jpg" alt="" /></a>
+            </div>
+            <div class="isi-teks2-andro">
+              <a href="">
+                <h1>
+                  8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                </h1>
+              </a>
+              <p>Maret 13, 2021 51 komentar</p>
+            </div>
+            <div class="con-no-main2-andro">
+              <p class="no-main2-andro">2</p>
+            </div>
+          </div>
+          <div class="isi-main2-andro">
+            <div class="isi-img2-andro">
+              <a href=""><img src="img/fo3.jpg" alt="" /></a>
+            </div>
+            <div class="isi-teks2-andro">
+              <a href="">
+                <h1>
+                  8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                </h1>
+              </a>
+              <p>Maret 13, 2021 51 komentar</p>
+            </div>
+            <div class="con-no-main2-andro">
+              <p class="no-main2-andro">3</p>
+            </div>
+          </div>
+          <div class="isi-main2-white-andro">
+            <div class="isi-img2-andro">
+              <a href=""><img src="img/fo4.jpg" alt="" /></a>
+            </div>
+            <div class="isi-teks2-andro">
+              <a href="">
+                <h1>
+                  8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                </h1>
+              </a>
+              <p>Maret 13, 2021 51 komentar</p>
+            </div>
+            <div class="con-no-main2-andro">
+              <p class="no-main2-andro">4</p>
+            </div>
+          </div>
+          <div class="isi-main2-andro">
+            <div class="isi-img2-andro">
+              <a href=""><img src="img/fo5.jpg" alt="" /></a>
+            </div>
+            <div class="isi-teks2-andro">
+              <a href="">
+                <h1>
+                  8 Rahasia Kebiasaan yang Dijalani Pengusaha Super Sukses
+                </h1>
+              </a>
+              <p>Maret 13, 2021 51 komentar</p>
+            </div>
+            <div class="con-no-main2-andro">
+              <p class="no-main2-andro">5</p>
+            </div>
+          </div>
+          <p class="p2-main2-andro">ARSIP</p>
+          <div class="con-p3-bulan-andro">
+            <a href="">Maret (10)</a>
+            <a href="">Februari (10)</a>
+            <a href="">Januari (10)</a>
+            <a href="">Desember (10)</a>
+            <a href="">Mei (10)</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="con-footer">
+          <p>© 2023 - <a href="">SportyNesia</a></p>
+        </div>
+      </div>
+      <div class="panah" id="panah">
+        <div class="con-panah">
+          <p><i class="bi bi-box-arrow-up"></i></p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const tombol = document.getElementById("andro12");
+      const andro1 = document.getElementById("andro1");
+      const andro2 = document.getElementById("andro2");
+      const andro3 = document.getElementById("andro3");
+      const andro4 = document.getElementById("andro4");
+      const andro5 = document.getElementById("andro5");
+      const andro6 = document.getElementById("andro6");
+
+      let isItemVisible = false;
+
+      function toggleItems() {
+        if (isItemVisible) {
+          andro1.style.display = "none";
+          andro2.style.display = "none";
+          andro3.style.display = "none";
+          andro4.style.display = "none";
+          andro5.style.display = "none";
+          andro6.style.display = "none";
+          isItemVisible = false;
+        } else {
+          andro1.style.display = "block";
+          andro2.style.display = "block";
+          andro3.style.display = "block";
+          andro4.style.display = "block";
+          andro5.style.display = "block";
+          andro6.style.display = "block";
+          isItemVisible = true;
+        }
+      }
+
+      tombol.addEventListener("click", toggleItems);
+
+      var navdropdown11 = document.querySelector(".ul-dropnav1");
+
+      function navdropdown1(event) {
+        event.stopPropagation();
+
+        if (navdropdown11.style.display === "block") {
+          navdropdown11.style.display = "none";
+        } else {
+          navdropdown11.style.display = "block";
+        }
+      }
+
+      window.addEventListener("click", function () {
+        navdropdown11.style.display = "none";
+      });
+
+      navdropdown11.addEventListener("click", navdropdown1);
+
+      var navdropdown22 = document.querySelector(".ul-dropnav2");
+
+      function navdropdown2(event) {
+        event.stopPropagation();
+
+        if (navdropdown22.style.display === "block") {
+          navdropdown22.style.display = "none";
+        } else {
+          navdropdown22.style.display = "block";
+        }
+      }
+
+      window.addEventListener("click", function () {
+        navdropdown22.style.display = "none";
+      });
+
+      navdropdown22.addEventListener("click", navdropdown2);
+
+      var navdropdownandro11 = document.querySelector(".ul-dropnav-andro");
+
+      function navdropdownandro1(event) {
+        event.stopPropagation();
+
+        if (navdropdownandro11.style.display === "block") {
+          navdropdownandro11.style.display = "none";
+        } else {
+          navdropdownandro11.style.display = "block";
+        }
+      }
+
+      window.addEventListener("click", function () {
+        navdropdownandro11.style.display = "none";
+      });
+
+      navdropdownandro11.addEventListener("click", navdropdownandro1);
+
+      window.addEventListener("scroll", function () {
+        var panah = document.getElementById("panah");
+        if (window.pageYOffset > 0) {
+          panah.style.display = "block";
+        } else {
+          panah.style.display = "none";
+        }
+      });
+
+      document.getElementById("panah").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+    <script>
+      var div = document.getElementById("div-banner");
+
+      div.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
